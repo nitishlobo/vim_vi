@@ -27,11 +27,12 @@ gg - move to top of file
 
 ctrl+o - move to an old position in the file
 ctrl+i - move to an old position in the file
- 
+
 MODE:
 i - insert mode
 v - visual mode
-R - replace mode
+ctrl+q - visual block mode
+shift+r - replace mode
 
 v motion :w TESTLER - select text specified by the motion (e.g. jjj) and then write it to a file called 'TESTLER'
 v motion d - select text and then delete it
@@ -78,6 +79,10 @@ A - Append text to end of line
 
 o - open a succeding new line and go into insert mode
 O - open a preceding new line and go into insert mode
+
+:5,17s/^/# - comment out the start (ie: ^) of lines between 5 and 17 with #
+ctrl+q jjjj shift+i # - insert python comment block (ie. #) along a column of code
+ctrl+q jjjjlll x - deletes columns of code
 
 FIND AND REPLACE:
 /monkey - search for the phrase 'monkey' within the file

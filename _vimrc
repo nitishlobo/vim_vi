@@ -6,7 +6,12 @@ runtime macros/matchit.vim
 let $PATH='/usr/local/bin:' . $PATH
 
 " PLUGINS
-filetype plugin on
+set rtp+=$HOME/vimfiles/plugin/Vundle.vim/      " Use Vundle to manage plugins
+call vundle#begin('$HOME/vimfiles/plugin/')
+Plugin 'Vundle.vim'                   " Use Vundle to manage vundle plug-in
+Plugin 'vim-fugitive'                     " Plugin for git
+call vundle#end()
+filetype plugin indent on
 
 " COLOURS
 set background=dark   " Alternative: light
