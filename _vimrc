@@ -6,11 +6,11 @@ runtime macros/matchit.vim
 let $PATH='/usr/local/bin:' . $PATH
 
 " PLUGINS
-Plug 'scrooloose/nerdcommenter'
+filetype plugin on
 
 " COLOURS
 set background=dark   " Alternative: light
-colorscheme solarized
+colorscheme torte
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
