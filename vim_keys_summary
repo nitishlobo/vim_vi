@@ -1,0 +1,106 @@
+VIM KEYS SUMMARY:
+
+GENERAL:
+:help user-manual - show a vim user manual directory
+:q ctrl+d - show a list of possible completions for commands beginning with 'q', press TAB for completion
+
+MOVEMENT:
+h - move left
+j - move down
+k - move up
+l - move right
+
+ctrl+w ctrl+w - move to other window in vim
+:help windows.txt - read docs on how to manipulate windows in vim
+
+w - move to first letter of next word
+e - move to last letter of current word
+b - move to beginning of current word
+
+0 - move to start of the line
+$ - move to end of the line
+
+ctrl+g - show current line position
+G - move to bottom of file
+gg - move to top of file
+6G - move to the line 6 of file
+
+ctrl+o - move to an old position in the file
+ctrl+i - move to an old position in the file
+ 
+MODE:
+i - insert mode
+v - visual mode
+R - replace mode
+
+v motion :w TESTLER - select text specified by the motion (e.g. jjj) and then write it to a file called 'TESTLER'
+v motion d - select text and then delete it
+
+FILE RELATED:
+:vsp TESTLER - vertically split the file 'TESTLER'
+
+:q - quit file
+:q! - force quit file
+:wq - write (ie. save) and then quit file
+
+:w TESTLER - save a copy of the file under the name 'TESTLER'
+:!dir - execute any external shell cmd (in this case dir cmd)
+:!del TESTLER - delete the file named 'TESTLER'
+
+EDITING:
+u - undo
+U - undo all changes on line
+ctrl+r - redo
+
+x - delete character
+dw - delete word
+d2w - delete 2 words
+d$ - delete to end of the line
+dd - delete line
+3dd - delete 3 lines
+
+rq - replace current character with the letter 'q'
+cw - change word
+c3w - change 3 words
+ce - change until end of the word
+c$ - change until the end of the line
+
+y - yank (ie. copy)
+yw - yanks one word
+0v$y - move to start, visual mode, move to end, copy (ie. copies whole line)
+p - paste deleted words or line
+
+ea - append text to end of current word
+A - Append text to end of line
+
+:r TESTLER - paste (ie. retrieve) all the content from the file 'TESTLER' (if it exists) into the current line
+:r !dir - paste the output of the command 'dir' into the current file
+
+o - open a succeding new line and go into insert mode
+O - open a preceding new line and go into insert mode
+
+FIND AND REPLACE:
+/monkey - search for the phrase 'monkey' within the file
+n - go to next find of the phrase
+N - go to previous find of the phrase
+/monkey\c - search for 'monkey' and ignore case
+
+:set ic - search for 'monkey' and set ignore case
+:set noic - ignore case of search term
+
+:set is - show partial matches for search phrase
+:set nois - do not show partial matches for search phrase
+
+:set hls - highlight matches
+:set nohls - unhighlight all matches
+
+% - find matching brackets
+
+:s/thee/the/g - substitute the word 'thee' with 'the' in this line globally
+:s/thee/the/gc - substitute the word 'thee' with 'the' in this line globally with a prompt each time
+:%s/thee/the/gc - substitute the word 'thee' with 'the' in whole file globally with a prompt each time
+
+VIMRC CONFIG:
+:e $VIM/_vimrc - edit the vimrc configuration file
+
+:help vimrc-intro - tutorial on vimrc
