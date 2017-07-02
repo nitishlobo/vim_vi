@@ -1,9 +1,11 @@
 VIM KEYS SUMMARY:
 
+---------------------------------------------------------------------------------------------------------
 GENERAL:
 :help user-manual - show a vim user manual directory
 :q ctrl+d - show a list of possible completions for commands beginning with 'q', press TAB for completion
 
+---------------------------------------------------------------------------------------------------------
 MOVEMENT:
 h - move left
 j - move down
@@ -28,6 +30,7 @@ gg - move to top of file
 ctrl+o - move to an old position in the file
 ctrl+i - move to an old position in the file
 
+---------------------------------------------------------------------------------------------------------
 MODE:
 i - insert mode
 v - visual mode
@@ -37,6 +40,7 @@ shift+r - replace mode
 v motion :w TESTLER - select text specified by the motion (e.g. jjj) and then write it to a file called 'TESTLER'
 v motion d - select text and then delete it
 
+---------------------------------------------------------------------------------------------------------
 FILE RELATED:
 :vsp TESTLER - vertically split the file 'TESTLER'
 
@@ -48,6 +52,7 @@ FILE RELATED:
 :!dir - execute any external shell cmd (in this case dir cmd)
 :!del TESTLER - delete the file named 'TESTLER'
 
+---------------------------------------------------------------------------------------------------------
 EDITING:
 u - undo
 U - undo all changes on line
@@ -84,6 +89,7 @@ O - open a preceding new line and go into insert mode
 ctrl+q jjjj shift+i # - insert python comment block (ie. #) along a column of code
 ctrl+q jjjjlll x - deletes columns of code
 
+---------------------------------------------------------------------------------------------------------
 FIND AND REPLACE:
 /monkey - search for the phrase 'monkey' within the file
 n - go to next find of the phrase
@@ -105,6 +111,7 @@ N - go to previous find of the phrase
 :s/thee/the/gc - substitute the word 'thee' with 'the' in this line globally with a prompt each time
 :%s/thee/the/gc - substitute the word 'thee' with 'the' in whole file globally with a prompt each time
 
+---------------------------------------------------------------------------------------------------------
 VIMRC CONFIG:
 :e $VIM/_vimrc - edit the vimrc configuration file
 
