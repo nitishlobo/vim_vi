@@ -103,7 +103,8 @@ N - go to previous find of the phrase
 :set nois - do not show partial matches for search phrase
 
 :set hls - highlight matches
-:set nohls - unhighlight all matches
+:set nohls - never highlight the matches
+:noh - clear all highlights until next search
 
 % - find matching brackets
 
